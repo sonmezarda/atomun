@@ -1,0 +1,30 @@
+.background-image{
+    height: 500px;
+    width: 500px;
+    border-radius: 250px;
+}
+.navbar-color{
+    background-color:black;
+}
+.timer-container{
+    height: 4rem;
+    background-color: gray;
+}
+.container{
+    height: 4rem;
+}
+.main-header{
+    text-align: center;
+    font-size:3rem;
+    font-style:normal;
+    padding-top: 5rem; 
+    padding-bottom: 1rem;
+}
+.center{
+    text-align: center;
+}
+.countdown-number{
+    font-size: xx-large;
+    font-weight: 700;
+}
+
