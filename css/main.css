@@ -23,15 +23,5 @@ a{
     padding-right: 1rem;
 }
 #timer{
-    display: flexbox;
-    padding-top: 2rem;
-}
-#timer ul{
-    display: flex;
-    list-style: none;
-    padding-left: 2rem;
-}
-#timer ul li div{
-    padding-left: 3rem; 
-    padding-bottom:0rem;
+    padding-top: 3rem;
 }

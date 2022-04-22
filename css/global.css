@@ -6,10 +6,7 @@
 .navbar-color{
     background-color:black;
 }
-.timer-container{
-    height: 4rem;
-    background-color: gray;
-}
+
 .container{
     height: 4rem;
 }
@@ -23,8 +20,32 @@
 .center{
     text-align: center;
 }
-.countdown-number{
-    font-size: xx-large;
-    font-weight: 700;
+/*Timer*/
+#timer{
+    display: flex;
+    justify-content: center;
+
+}
+.timer-container{
+    background-color: gray;
+    border-radius: 1rem;
+    display: flex;
+    min-height: 4rem;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+.timer-box{
+    text-align: center;
+    width: 6rem;
+
+}
+.timer-box h1{
+    font-size: 3rem;
+}
+.timer-box p{
+    font-size: 0.7rem;
+    color: white;
+    padding-bottom: 0.5rem;
 }
 
