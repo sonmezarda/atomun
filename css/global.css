@@ -27,7 +27,7 @@
 
 }
 .timer-container{
-    background-color: gray;
+    background-color: black;
     border-radius: 1rem;
     display: flex;
     min-height: 4rem;
@@ -41,11 +41,31 @@
 
 }
 .timer-box h1{
+    color: goldenrod;
     font-size: 3rem;
 }
 .timer-box p{
     font-size: 0.7rem;
-    color: white;
+    color:white;
     padding-bottom: 0.5rem;
+}
+/*Buttons*/
+.button {
+    background-color:white; /* Green */
+    border: 0.2rem solid black;
+    color: black;
+    border-radius: 0.5rem;
+    
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+.button:hover{
+    background-color: black;
+    color: white;
 }
 
