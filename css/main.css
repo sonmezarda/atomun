@@ -4,22 +4,28 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: black;
+}
 a{
     text-decoration: none;
     color: white;
 }
 #navbar{
+    background-image: url("/img/navbar-logo.jpg");
+    background-attachment:local;
+    background-position:1rem; 
+    background-repeat: no-repeat;
+    background-size: 3rem;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     padding: 0 0.75rem;
     height: 4rem;
 }
 #navbar ul{
     list-style: none;
-    display: flex;
-    align-items: center;
-    
+    display: flex; 
 }
 #navbar ul li a{
     padding: 0.5rem;
@@ -36,4 +42,13 @@ a{
     border-radius: 10px;
     
     color: black;
+}
+ 
+.head-1{
+    background-image: url("/img/background.jpg");
+    
+    background-blend-mode: color-burn;
+    background-color : rgba(0,0,0,0.5);
+    
+    background-size:cover;
 }
