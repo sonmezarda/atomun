@@ -26,30 +26,66 @@
 
 <body>
     <header class="navbar-color">
-        <div class="container">
+        <div class="navbar-container">
             <nav id="navbar">
+                <img class = "logo-img2" src="/img/navbar-logo.jpg" alt="">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <!--<li><img style=" height: 5.5rem; width: auto; border-radius: 2rem;" src="img/navbar-logo.jpg"alt=""></li>-->
-                            
-                    <li><a href="#commities">Commities</a></li>
-                    <li><a href="#applicatin">Apply</a></li>
+                    <li>
+                        <div class="dropdown">
+                        <button class="dropbtn">Dropdown</button>
+                        <div class="dropdown-content">
+                          <a href="#">Link 1</a>
+                          <a href="#">Link 2</a>
+                          <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                        <button class="dropbtn">Dropdown</button>
+                        <div class="dropdown-content">
+                          <a href="#">Link 1</a>
+                          <a href="#">Link 2</a>
+                          <a href="#">Link 3</a>
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                        <button class="dropbtn">Dropdown</button>
+                        <div class="dropdown-content">
+                          <a href="#">Link 1</a>
+                          <a href="#">Link 2</a>
+                          <a href="#">Link 3</a>
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                        <button class="dropbtn">Dropdown</button>
+                        <div class="dropdown-content">
+                          <a href="#">Link 1</a>
+                          <a href="#">Link 2</a>
+                          <a href="#">Link 3</a>
+                        </div>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
+<!--ggg-->
 
 
-
-    <div class="head-1" >
+    <div class="head-1" style="height: 600px; position: relative;">
+    <div style="text-align: center;">
+        <img id = "main-logo" src="/img/navbar-logo.jpg" alt="logo">
         <h1 class="main-header">ATOMUN 2022</h1>
         <div class="center" style="color: white; font-size: larger; font-weight: 700;">• 27 March - 31 March •</div>
         <div class="center" style="padding-top: 2rem;">
             <button class="center button">APPLY NOW!</button>
         </div>
-
-        <div id="timer">
+        <div id="timer" style="position: absolute; bottom: 0px; right: 50%; left: 50%;">
             <div class="timer-container">
                 <div class="timer-box">
                     <h1>00</h1>
@@ -72,7 +108,13 @@
                 </div>
             </div>
         </div>
+        
     </div>
+        <div style="height:1000px; width:10px; background-color: red"></div>
+            
+    </div>
+
+    <button onclick="change_logo_position()">sa</button>
 
 </body>
 

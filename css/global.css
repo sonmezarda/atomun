@@ -7,17 +7,8 @@
     background-color:black;
 }
 
-.container{
-    height: 4rem;
-}
-.main-header{
-    text-align: center;
-    font-size:3rem;
-    font-style:normal;
-    padding-top: 5rem; 
-    padding-bottom: 1rem;
-    color: white;
-}
+
+
 .center{
     text-align: center;
 }
@@ -49,7 +40,7 @@
 }
 .timer-box p{
     font-size: 0.7rem;
-    color:rgb(125, 42, 183);
+    color:rgb(125, 42, 183); /* #4D1E29
     padding-bottom: 0.5rem;
     /*163 54 240*/
 }

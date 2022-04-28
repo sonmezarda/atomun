@@ -44,4 +44,13 @@ var interval1 = window.setInterval(function () {
     set_timer(get_date_difference(mun_date_));
 }, 1000);
 
-//console.log(get_date_difference(mun_date));
+function send_message(message){
+    console.log(message);
+}
+
+function change_logo_position(){
+    let logo_img = document.getElementById("main-logo");
+    let navbar = document.getElementById("navbar");
+    console.log(logo_img);
+    logo_img.parentElement = navbar;
+}
