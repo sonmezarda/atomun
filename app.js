@@ -55,14 +55,16 @@ function change_logo_position(){
     logo_img.parentElement = navbar;
 }
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {myFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar").style.padding = "20px 10px";
-    document.getElementById("logo").style.height = "80px";
+
+
+function myFunction() {
+    var header = document.getElementById("header-main");
+    var sticky = header.clientHeight;
+  if (window.pageYOffset >= sticky){
+    navbar.classList.add("sticky")
   } else {
-    document.getElementById("navbar").style.padding = "20px 10px";
-    document.getElementById("logo").style.height = "250px";
+    navbar.classList.remove("sticky");
   }
 }
