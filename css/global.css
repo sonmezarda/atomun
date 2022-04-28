@@ -3,36 +3,22 @@
     width: 500px;
     border-radius: 250px;
 }
-.navbar-color{
-    background-color:black;
-}
-
-
-
 .center{
     text-align: center;
 }
 /*Timer*/
 #timer{
     display: flex;
-    justify-content: center;
-
-}
-.timer-container{
+    position: absolute; 
+    bottom: 0px;
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 1rem;
     border-bottom-left-radius: 0rem;
     border-bottom-right-radius: 0rem;
-    display: flex;
-    min-height: 4rem;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
 }
 .timer-box{
     text-align: center;
     width: 6rem;
-
 }
 .timer-box h1{
     color: goldenrod;
@@ -40,7 +26,7 @@
 }
 .timer-box p{
     font-size: 0.7rem;
-    color:rgb(125, 42, 183); /* #4D1E29
+    color: #721321 /*rgb(125, 42, 183);  #4D1E29
     padding-bottom: 0.5rem;
     /*163 54 240*/
 }

@@ -11,28 +11,12 @@ a{
     text-decoration: none;
     color: white;
 }
-.logo-img2{
-    position: absolute;
-    left: 0%;
-    padding: 0.3rem;
-    border-radius: 10%;
-    /**/
-    height: inherit;
-    display: flex;
-    transition: 1s;
-}
-#main-logo{
-    /**/
-    height: 200px;
-    border-radius: 10%;
-    transition: 1s;
-}
 .main-header{
     position: relative;
     text-align: center;
     font-size:3rem;
     font-style:normal;
-    padding-top: 2rem; 
+    padding-top: 20rem; 
     padding-bottom: 1rem;
     color: white;
 }
@@ -40,48 +24,73 @@ a{
 .navbar-container{
     height: 5rem;
 }
-#navbar{
-    /*
-    background-image: url("/img/navbar-logo.jpg");
-    background-attachment:local;
-    background-position:1rem; 
-    background-repeat: no-repeat;
-    background-size: 3rem;*/
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    padding: 0 0.75rem;
-    height: inherit;
-    
-}
-#navbar ul{
-    list-style: none;
-    display: flex; 
-}
-#navbar ul li a{
-    padding: 0.5rem;
-    margin: 0.5rem ;
-}
-#navbar ul img{
-    margin-top: 4rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-#navbar ul li a:hover{
-    /*border: 0.5rem solid white;*/
+#navbar {
+    overflow: hidden;
     background-color: white;
-    border-radius: 10px;
-    
+    background-image: linear-gradient(to left,#721321, goldenrod);
+    padding: 90px 10px;
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+  }
+  
+  #navbar a {
+    float: left;
     color: black;
-}
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+    margin: 0px 10px;
+  }
+  
+  #navbar #logo {
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.4s;
+    display: inline-block;
+    height: 100px;
+  }
+  
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  #navbar a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  #navbar-right {
+    float: right;
+  }
+  
+  @media screen and (max-width: 580px) {
+    #navbar {
+      padding: 20px 10px !important;
+    }
+    #navbar a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    #navbar-right {
+      float: none;
+    }
+  }
  
 .head-1{
-    background-image: url("/img/background.jpg");
-    
+    background-image: url("/img/background.jpg");  
+    height: 1000px;
     background-blend-mode: color-burn;
     background-color : rgba(0,0,0,0.5);
-    
-    background-size:cover;
+    position: relative;
+    background-size: cover;
 }
 
 /*DROPDOWN*/

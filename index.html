@@ -21,100 +21,57 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-
 </head>
 
 <body>
-    <header class="navbar-color">
-        <div class="navbar-container">
-            <nav id="navbar">
-                <img class = "logo-img2" src="/img/navbar-logo.jpg" alt="">
-                <ul>
-                    <li>
-                        <div class="dropdown">
-                        <button class="dropbtn">Dropdown</button>
-                        <div class="dropdown-content">
-                          <a href="#">Link 1</a>
-                          <a href="#">Link 2</a>
-                          <a href="#">Link 3</a>
-                        </div>
-                    </div>
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                        <button class="dropbtn">Dropdown</button>
-                        <div class="dropdown-content">
-                          <a href="#">Link 1</a>
-                          <a href="#">Link 2</a>
-                          <a href="#">Link 3</a>
-                        </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                        <button class="dropbtn">Dropdown</button>
-                        <div class="dropdown-content">
-                          <a href="#">Link 1</a>
-                          <a href="#">Link 2</a>
-                          <a href="#">Link 3</a>
-                        </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                        <button class="dropbtn">Dropdown</button>
-                        <div class="dropdown-content">
-                          <a href="#">Link 1</a>
-                          <a href="#">Link 2</a>
-                          <a href="#">Link 3</a>
-                        </div>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<div id="navbar">
+  <span href="#default" id="logo" style="right: 100px;">
+      <img src="/img/navbar-logo.png" style="height: inherit; " alt="">
+  </span>
+  <div id="navbar-right">
+    <a class="active" href="#home">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+</div>
+
 <!--ggg-->
-
-
-    <div class="head-1" style="height: 600px; position: relative;">
-    <div style="text-align: center;">
-        <img id = "main-logo" src="/img/navbar-logo.jpg" alt="logo">
-        <h1 class="main-header">ATOMUN 2022</h1>
+    <div class = "head-1">
+        <h1 class="main-header" id="default">ATOMUN 2022</h1>
         <div class="center" style="color: white; font-size: larger; font-weight: 700;">• 27 March - 31 March •</div>
         <div class="center" style="padding-top: 2rem;">
             <button class="center button">APPLY NOW!</button>
         </div>
-        <div id="timer" style="position: absolute; bottom: 0px; right: 50%; left: 50%;">
-            <div class="timer-container">
+       
+        <div style="display: flex; justify-content: center;">
+            <div id="timer">
                 <div class="timer-box">
                     <h1>00</h1>
                     <p>Days</p>
                 </div>
-
+    
                 <div class="timer-box">
                     <h1>00</h1>
                     <p>Hours</p>
                 </div>
-
+    
                 <div class="timer-box">
                     <h1>00</h1>
                     <p>Minutes</p>
                 </div>
-
+    
                 <div class="timer-box">
                     <h1>00</h1>
                     <p>Seconds</p>
                 </div>
+                
             </div>
         </div>
+        
         
     </div>
         <div style="height:1000px; width:10px; background-color: red"></div>
             
-    </div>
-
-    <button onclick="change_logo_position()">sa</button>
 
 </body>
 

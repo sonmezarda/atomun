@@ -30,10 +30,10 @@ function get_date_difference(mun_date) {
 
 function set_timer(remaining_date) {
     let timer = document.querySelector("#timer");
-    let day_count = timer.children[0].children[0].querySelector("h1");
-    let hour_count = timer.children[0].children[1].querySelector("h1");
-    let minute_count = timer.children[0].children[2].querySelector("h1");
-    let second_count = timer.children[0].children[3].querySelector("h1");
+    let day_count = timer.children[0].querySelector("h1");
+    let hour_count = timer.children[1].querySelector("h1");
+    let minute_count = timer.children[2].querySelector("h1");
+    let second_count = timer.children[3].querySelector("h1");
     day_count.textContent = remaining_date[0];
     hour_count.textContent = remaining_date[1];
     minute_count.textContent = remaining_date[2];
@@ -53,4 +53,16 @@ function change_logo_position(){
     let navbar = document.getElementById("navbar");
     console.log(logo_img);
     logo_img.parentElement = navbar;
+}
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "20px 10px";
+    document.getElementById("logo").style.height = "80px";
+  } else {
+    document.getElementById("navbar").style.padding = "20px 10px";
+    document.getElementById("logo").style.height = "250px";
+  }
 }
