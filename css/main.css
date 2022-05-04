@@ -21,7 +21,7 @@ a{
     font-style:normal;
     padding-top: 5rem; 
     padding-bottom: 1rem;
-    color: goldenrod ;
+    color: antiquewhite;
 }
 
 #navbar {
@@ -96,13 +96,27 @@ footer{
   #header-main {
     background-image: linear-gradient(to left,#721321, goldenrod);
     padding: 30px;
-    text-align: center;
-  }
+    text-align: left;
+    justify-content: center;
+    
+}
   #header-main img{
-      max-width: 20%;
-      min-width: 10%;
+      max-width: 100%;
+      min-width: 100%;
+      
   }
-
+  #header-main .img-span{
+      display: inline-block;
+      max-width: 20%;
+    
+      vertical-align: middle;
+  }
+  #header-main .p-span{
+      font-size: 70px;
+      font-weight: 700;
+      width: auto;
+      vertical-align:middle;
+  }
   #contact-container{
       padding-bottom: 1rem;
   }
@@ -113,7 +127,6 @@ footer{
     #contact-container p{
         color: white;
     }
-  
 
     #team-div{
         background-color: #721321;
