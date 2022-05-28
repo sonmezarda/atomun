@@ -44,9 +44,7 @@ a{
   background-color: #721321;
   color: goldenrod;
 }
-footer{
-    background-color: #6D6E71;
-}
+
 #navbar a.active {
   background-color: #04AA6D;
   color: white;
@@ -69,7 +67,7 @@ footer{
     background-blend-mode: color-burn;
     background-color : rgba(0,0,0,0.2);
     position: relative;
-    background-size:cover;
+    background-size: cover ;
 }
 #sg-letter-div{
     background-color: antiquewhite;
@@ -119,15 +117,94 @@ footer{
   }
   #contact-container{
       padding-bottom: 1rem;
+      text-align: center;
+      color :white;
   }
   #contact-container h2{
-    color: white;
     font-size: 2rem;
-}
-    #contact-container p{
-        color: white;
-    }
+    text-decoration: underline;
+    margin-bottom: 0.5rem;
+  }
 
+    #commities-div{
+        background-color: goldenrod ;
+        text-align: center;
+        padding: 3rem 0rem;
+    }
+    #commities-div h1{
+        color: white;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    .accordion {
+        background-color: #721321;
+        color: white;
+        font-size: 1.3rem;
+        cursor: pointer;
+        padding: 18px;
+        width: 80%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.5s;
+      }
+      .accordion img{
+        height: 2rem;
+      }
+      .accordion:after {
+        content: '\02795'; /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+      }
+      
+      .active:after {
+        content: "\2796"; /* Unicode character for "minus" sign (-) */
+      }
+      
+      /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+      .active, .accordion:hover {
+        background-color: #580e19;
+      }
+      
+      /* Style the accordion panel. Note: hidden by default */
+      .panel {
+        padding: 0 18px;
+        background-color: antiquewhite;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-out;
+        text-align: center;
+        margin: 0rem 10%;
+      }
+      .panel img{
+        margin-top: 2rem;
+        height: 200px;
+        border-radius: 50%;
+      }
+      .panel h2{
+        margin :1rem;
+      }
+      .panel h3{
+        margin :1rem;
+      }
+      .panel p{
+        margin :1rem 10%;
+        text-align: justify;
+      }
+
+      #application-div{
+        padding: 3rem;
+        background-color: antiquewhite;
+        text-align: center;
+        height: 750px;
+      }
+      #application-div h1{
+        color: black;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
     #team-div{
         background-color: #721321;
         color: white;
@@ -170,8 +247,39 @@ footer{
     padding: 0.5rem 0rem;
     width: 25%;
 }
+.image-grid .image-grid-row .p-name-right{
+  position: absolute;
+  align-self:flex-start;
+  right: 8.7rem;
+  background-color: goldenrod;
+  padding: 0.5rem 0rem;
+  width: 25%;
+}
+.image-grid .image-grid-row .p-name-left{
+  position: absolute;
+  align-self:flex-start;
+  left: 8.7rem;
+  background-color: goldenrod;
+  padding: 0.5rem 0rem;
+  width: 25%;
+}
+footer{
+  background-color: #6D6E71;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem;
+}
+.social-container h1{
+  margin-bottom: 0.5rem;
+}
 .social-container{
     text-align: center;
+    color: white;
+    text-decoration: underline;
+    display: inline-block;
+    
 }
 .fa {
     width: 50px;
@@ -189,6 +297,57 @@ background: #125688;
 color: white;
 }
 .fa-google {
-    background: #dd4b39;
-    color: white;
-  }
+  background: #dd4b39;
+  color: white;
+  
+}
+
+
+/*Tb*/
+.tab {
+  float: left;
+  /*border: 1px solid #ccc;*/
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: white;
+  font-size: 1.3rem;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #721321;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #580e19;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #580e19;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  /*border: 1px solid #ccc;*/
+  width: 70%;
+  border-left: none;
+  height: 459px;
+  font-size: 1.3rem;
+  background-color: goldenrod;
+  color: white;
+  padding: 1.5rem;
+}
